@@ -1,461 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>priya's web</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="/priya1.jpg" type="image/png">
-	<link rel="stylesheet" href="/style.css">
-	<script src="/tailwind.js"></script>
-	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyadharshini G | Software Development Engineer Portfolio</title>
+    <link rel="shortcut icon" href="./priya1.jpg" type="image/png">
+    
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<div id="particles-js"></div>
-	<nav id="desktop-nav">
-		<div class="logo">PRIYADHARSHINI G</div>
-		<div>
-		  <ul class="nav-links">
-			<li><a href="#about">About</a></li>
-			<li><a href="#experience">Experience</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		  </ul>
-		</div>
-	  </nav>
-	  <nav id="hamburger-nav">
-		<div class="logo">PRIYADHARSHINI G</div>
-		<div class="hamburger-menu">
-		  <div class="hamburger-icon" onclick="toggleMenu()">
-			<span></span>
-			<span></span>
-			<span></span>
-		  </div>
-		  <div class="menu-links">
-			<li><a href="#about" onclick="toggleMenu()">About</a></li>
-			<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-			<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-			<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-		  </div>
-		</div>
-	  </nav>
-	  <section id="profile">
-		<div class="section__pic-container">
-		  <img src="profile.jpg" alt="Priyadharshini profile picture" class="prof" />
-		</div>
-		<div class="section__text">
-		  <p class="section_text_p1">Hello, I'm</p>
-		  <h1 class="title">PRIYADHARSHINI G</h1>
-		  <p class="section_text_p2">Fullstack Developer</p>
-		  <div class="btn-container">
-			<button
-			  class="btn btn-color-2"
-			  onclick="window.open('resume-example.pdf')"
-			>
-			  Download CV
-			</button>
-			<button class="btn btn-color-1" onclick="location.href='./#contact'">
-			  Contact Info
-			</button>
-		  </div>
-		  <div id="socials-container">
-			<img
-			  src="linkedin.png"
-			  alt="My LinkedIn profile"
-			  class="icon"
-			  onclick="location.href='https://www.linkedin.com/in/priyadharshini-g-17bbaa27b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
-			/>
-			<img
-			  src="github.png"
-			  alt="My Github profile"
-			  class="icon"
-			  onclick="location.href='https://github.com/Gpriyadharshini8148'"
-			/>
-		  </div>
-		</div>
-	  </section>
-	  <section id="about">
-		<p class="section_text_p1">Get To Know More</p>
-		<h1 class="title">About Me</h1>
-		<div class="section-container">
-		  <div class="section__pic-container">
-			<img
-			  src="about-pic.png"
-			  alt="Profile picture"
-			  class="about-pic"
-			/>
-		  </div>
-		  <div class="about-details-container">
-			<div class="about-containers">
-			  <div class="details-container">
-				<img
-				  src="experience.png"
-				  alt="Experience icon"
-				  class="icon"
-				/>
-				<h3>Experience</h3>
-				<p>1+ years <br />Fullstack Development</p>
-			  </div>
-			  <div class="details-container">
-				<img
-				  src="education.png"
-				  alt="Education icon"
-				  class="icon"
-				/>
-				<h3>Education</h3>
-				<p>B.E.,computer science and Engineering</p>
-			  </div>
-			</div>
-			<div class="text-container">
-			  <p>
-				I am a qualified and professional frontend Developer with practical experience
-				in tata, Google career courses and Strong creative, critical thinking and
-				analytical skills. Team player with an eye for detail.
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<img
-		  src="arrow.png"
-		  alt="Arrow icon"
-		  class="icon arrow"
-		  onclick="location.href='./#experience'"
-		/>
-	  </section>
-	  <section id="experience">
-		<p class="section_text_p1">Explore My</p>
-		<h1 class="title">Experience</h1>
-		<div class="experience-details-container">
-		  <div class="about-containers">
-			<div class="details-container">
-			 <!-- <h2 class="experience-sub-title">Frontend Development</h2>-->
-			  <div class="article-container">
-				<article>
-				  <img
-					src="html.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>HTML</h3>
-					<p>Experienced</p>
-				  </div>
-				</article>
-				<article>
-				  <img
-					src="css.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>CSS</h3>
-					<p>Experienced</p>
-				  </div>
-				</article>
-				<article>
-				  <img
-					src="sass.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>SASS</h3>
-					<p>Intermediate</p>
-				  </div>
-				</article>
-				<article>
-				  <img
-					src="js.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>JavaScript</h3>
-					<p>Basic</p>
-				  </div>
-				</article>
-				<article>
-				  <img
-					src="c.png"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>C</h3>
-					<p>Experienced</p>
-				  </div>
-				</article>
-				<article>
-				  <img
-					src="numpy.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>Numpy</h3>
-					<p>Intermediate</p>
-				  </div>
-				</article>
-				<article>
-					<img
-					  src="tab.svg"
-					  alt="Experience icon"
-					  class="icon"
-					/>
-					<div>
-					  <h3>Tableau</h3>
-					  <p>Intermediate</p>
-					</div>
-				  </article>
-				  <article>
-					<img
-					  src="and.svg"
-					  alt="Experience icon"
-					  class="icon"
-					/>
-					<div>
-					  <h3>Android</h3>
-					  <p>Intermediate</p>
-					</div>
-				  </article>
-			  </div>
-			</div>
-			<div class="details-container">
-			 <!-- <h2 class="experience-sub-title">Frontend Development</h2>-->
-			  <div class="article-container">
-				<article>
-				  <img
-					src="mysql.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>MySQL</h3>
-					<p>Intermediate</p>
-				  </div>
-				</article>
-				<article>
-				  <img
-					src="nodejs.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>Node JS</h3>
-					<p>Intermediate</p>
-				  </div>
-				</article>
-				<article>
-				  <img
-					src="Pandas.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>Pandas</h3>
-					<p>Intermediate</p>
-				  </div>
-				</article>
-				<article>
-				  <img
-					src="git.svg"
-					alt="Experience icon"
-					class="icon"
-				  />
-				  <div>
-					<h3>Git</h3>
-					<p>Intermediate</p>
-				  </div>
-				</article>
-				<article>
-					<img
-					  src="c++.svg"
-					  alt="Experience icon"
-					  class="icon"
-					/>
-					<div>
-					  <h3>C++</h3>
-					  <p>Experienced</p>
-					</div>
-				  </article>
-				  <article>
-					<img
-					  src="github.png"
-					  alt="Experience icon"
-					  class="icon"
-					/>
-					<div>
-					  <h3>Github</h3>
-					  <p>Intermediate</p>
-					</div>
-				  </article>
-				  <article>
-					<img
-					  src="python.svg"
-					  alt="Experience icon"
-					  class="icon"
-					/>
-					<div>
-					  <h3>Python</h3>
-					  <p>Intermediate</p>
-					</div>
-				  </article>
-				  <article>
-					<img
-					  src="react.svg"
-					  alt="Experience icon"
-					  class="icon"
-					/>
-					<div>
-					  <h3>ReactJS</h3>
-					  <p>Intermediate</p>
-					</div>
-				  </article>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<img
-		  src="arrow.png"
-		  alt="Arrow icon"
-		  class="icon arrow"
-		  onclick="location.href='./#projects'"
-		/>
-	  </section>
-	  <section id="projects">
-		<p class="section_text_p1">Browse My Recent</p>
-		<h1 class="title">Projects</h1>
-		<div class="experience-details-container">
-		  <div class="about-containers">
-			<div class="details-container color-container">
-			  <div class="article-container">
-				<img
-				  src="travelgo1.png"
-				  alt="Project 1"
-				  class="project-img"
-				  width="100px"
-				  height="200px"
-				/>
-			  </div>
-			  <h2 class="experience-sub-title project-title">Project One</h2>
-			  <div class="btn-container">
-				<button
-				  class="btn btn-color-2 project-btn"
-				  onclick="location.href='https://github.com/Gpriyadharshini8148/TravelGo'"
-				>
-				  Github
-				</button>
-				<button
-				  class="btn btn-color-2 project-btn"
-				  onclick="location.href='https://github.com/Gpriyadharshini8148/TravelGo'"
-				>
-				  Live Demo
-				</button>
-			  </div>
-			</div>
-			<div class="details-container color-container">
-			  <div class="article-container">
-				<img
-				  src="project-2.png"
-				  alt="Project 2"
-				  class="project-img"
-				/>
-			  </div>
-			  <h2 class="experience-sub-title project-title">Project Two</h2>
-			  <div class="btn-container">
-				<button
-				  class="btn btn-color-2 project-btn"
-				  onclick="location.href='https://github.com/'"
-				>
-				  Github
-				</button>
-				<button
-				  class="btn btn-color-2 project-btn"
-				  onclick="location.href='https://github.com/'"
-				>
-				  Live Demo
-				</button>
-			  </div>
-			</div>
-			<div class="details-container color-container">
-			  <div class="article-container">
-				<img
-				  src="project-3.png"
-				  alt="Project 3"
-				  class="project-img"
-				/>
-			  </div>
-			  <h2 class="experience-sub-title project-title">Project Three</h2>
-			  <div class="btn-container">
-				<button
-				  class="btn btn-color-2 project-btn"
-				  onclick="location.href='https://github.com/'"
-				>
-				  Github
-				</button>
-				<button
-				  class="btn btn-color-2 project-btn"
-				  onclick="location.href='https://github.com/'"
-				>
-				  Live Demo
-				</button>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<img
-		  src="arrow.png"
-		  alt="Arrow icon"
-		  class="icon arrow"
-		  onclick="location.href='./#contact'"
-		/>
-	  </section>
-	  <section id="contact">
-		<p class="section_text_p1">Get in Touch</p>
-		<h1 class="title">Contact Me</h1>
-		<div class="contact-info-upper-container">
-		  <div class="contact-info-container">
-			<img
-			  src="email.png"
-			  alt="Email icon"
-			  class="icon contact-icon email-icon"
-			/>
-			<p><a href="mailto:gpriyampt@gmail.com">gpriyampt@gmail.com</a></p>
-		  </div>
-		  <div class="contact-info-container">
-			<img
-			  src="linkedin.png"
-			  alt="LinkedIn icon"
-			  class="icon contact-icon"
-			/>
-			<p><a href="https://www.linkedin.com/in/priyadharshini-g-17bbaa27b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> PRIYADHARSHINI G</a></p>
-		  </div>
-		</div>
-	  </section>
-	  <footer>
-		<nav>
-		  <div class="nav-links-container">
-			<ul class="nav-links">
-			  <li><a href="#about">About</a></li>
-			  <li><a href="#experience">Experience</a></li>
-			  <li><a href="#projects">Projects</a></li>
-			  <li><a href="#contact">Contact</a></li>
-			</ul>
-		  </div>
-		</nav>
-		<p>Copyright &#169; 2024 Priyadharshini G.All Rights Reserved.</p>
-	  </footer>
-	  <script src="script.js"></script>
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
 
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">PRIYA<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<!-- partial -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="/particles.js"></script>
-<script src="/app.js"></script>
-<script src="/script.js"></script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="glitch-text">PRIYADHARSHINI G</h1>
+                <h2 class="typewriter">Software Development Engineer Intern</h2>
+                <p class="hero-desc">Building scalable backend systems and intelligent ML models.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="./PRIYADHARSHINI_G_RESUME_.pdf" target="_blank" class="btn btn-secondary">View Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Gpriyadharshini8148" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/priyadharshini-g-17bbaa27b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:gpriyampt@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="profile.jpg" alt="Priyadharshini G">
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-text glass-card">
+                <p>I am a highly motivated <strong>Software Development Engineer Intern</strong> with a backend-heavy skill set and a passion for <strong>Machine Learning</strong>. Currently pursuing my B.E. in Computer Science at <strong>Annamalai University</strong>, I maintain a strong academic record with a <strong>9.46 CGPA</strong>.</p>
+                <p>My expertise lies in building robust RESTful APIs with Django/Flask and crafting intelligent solutions using TensorFlow and OpenCV. I thrive in collaborative environments and am dedicated to writing clean, scalable code.</p>
+                
+                <div class="education-summary">
+                    <div class="edu-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <h4>B.E. Computer Science</h4>
+                            <p>Annamalai University | 2022 - 2026</p>
+                            <p class="cgpa">CGPA: 9.46</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">My <span>Expertise</span></h2>
+        <div class="skills-grid">
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                <ul>
+                    <li><img src="c++.svg" alt="C++"> C++</li>
+                    <li><img src="c.png" alt="C"> C</li>
+                    <li><img src="python.svg" alt="Python"> Python</li>
+                    <li><img src="html.svg" alt="HTML"> HTML5</li>
+                    <li><img src="css.svg" alt="CSS"> CSS3</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-layers-group"></i> Frameworks & Libs</h3>
+                <ul>
+                    <li><img src="nodejs.svg" alt="Node JS"> Node JS</li>
+                    <li><img src="react.svg" alt="React"> ReactJS</li>
+                    <li>Flask / Django</li>
+                    <li>Django Rest Framework</li>
+                    <li>TensorFlow / Keras</li>
+                    <li>Scikit-Learn</li>
+                    <li>OpenCV</li>
+                    <li><img src="Pandas.svg" alt="Pandas"> Pandas</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                <ul>
+                    <li><img src="mysql.svg" alt="MySQL"> MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+                <ul>
+                    <li><img src="git.svg" alt="Git"> Git</li>
+                    <li><img src="github.svg" alt="GitHub"> GitHub</li>
+                    <li>Docker</li>
+                    <li>Postman</li>
+                    <li><img src="tab.svg" alt="Tableau"> Tableau</li>
+                    <li>Power BI</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="timeline">
+            <div class="timeline-item glass-card">
+                <div class="timeline-date">Jan 2026 - Present</div>
+                <div class="timeline-content">
+                    <h3>Software Development Engineer Intern</h3>
+                    <h4>Cyces Innovation Lab LLP | Chennai</h4>
+                    <ul>
+                        <li>Developed RESTful APIs using Django REST Framework and integrated PostgreSQL databases for backend services.</li>
+                        <li>Implemented CRUD operations, database schema design, and API testing using Postman.</li>
+                        <li>Collaborated with developers following SDLC practices to build scalable and maintainable backend systems.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item glass-card">
+                <div class="timeline-date">May 2025 - June 2025</div>
+                <div class="timeline-content">
+                    <h3>Machine Learning Intern</h3>
+                    <h4>NIT Puducherry | Karaikkal</h4>
+                    <ul>
+                        <li>Built and optimized machine learning models for real-time prediction using Python, Scikit-Learn, and TensorFlow.</li>
+                        <li>Designed image processing algorithms using OpenCV for gesture and object recognition.</li>
+                        <li>Integrated trained ML models into Flask applications, improving real-time inference speed.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <img src="travelgo1.png" alt="TravelGo">
+                </div>
+                <div class="project-info">
+                    <h3>TravelGo Mobile App</h3>
+                    <p>Android travel-planning application with itinerary creation, real-time weather updates, and location-based recommendations.</p>
+                    <div class="project-tech">
+                        <span>Java</span> <span>Firebase</span> <span>XML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gpriyadharshini8148/TravelGo" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional projects based on resume -->
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <!-- Using a placeholder/generated style if image missing -->
+                    <div class="project-placeholder"><i class="fa-solid fa-ear-deaf"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>AI for Assisting the Deaf</h3>
+                    <p>Two-way communication system using MediaPipe-based sign language recognition and CNN classifier.</p>
+                    <div class="project-tech">
+                        <span>Flask</span> <span>TensorFlow</span> <span>Keras</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <div class="project-placeholder"><i class="fa-solid fa-lungs"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>Pneumonia Detection</h3>
+                    <p>ML model evaluation using precision/recall and a robust preprocessing pipeline for medical image analysis.</p>
+                    <div class="project-tech">
+                        <span>Python</span> <span>TensorFlow</span> <span>Scikit-Learn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-item glass-card">
+                <i class="fa-solid fa-cloud"></i>
+                <p>Cloud Computing - NPTEL</p>
+            </div>
+            <div class="cert-item glass-card">
+                <i class="fa-solid fa-users"></i>
+                <p>Social Networks - NPTEL</p>
+            </div>
+            <div class="cert-item glass-card">
+                <i class="fa-solid fa-certificate"></i>
+                <p>Data for Everyone - Google</p>
+            </div>
+            <div class="cert-item glass-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <p>Cybersecurity Analyst - Tata Group</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-container glass-card">
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <p>Email</p>
+                        <a href="mailto:gpriyampt@gmail.com">gpriyampt@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p>Phone</p>
+                        <a href="tel:+918148474177">+91 8148474177</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div>
+                        <p>LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/priyadharshini-g-17bbaa27b">PRIYADHARSHINI G</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Priyadharshini G. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./app.js"></script>
+    <script>
+        // Simple Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Smooth Scroll for Nav Links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
